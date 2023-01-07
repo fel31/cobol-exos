@@ -16,7 +16,7 @@
        DATA DIVISION.
        
        WORKING-STORAGE SECTION.
-       01  WS-NOTE pic 9(2).
+       01  WS-NOTE pic 99.
            88 MEDIOCRE  value 0 THRU 7.
            88 MOYEN     value 8 THRU 12.
            88 ASSEZBIEN value 13 THRU 14.
