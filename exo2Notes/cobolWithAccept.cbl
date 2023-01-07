@@ -24,7 +24,6 @@
            88 TB        value 17 THRU 18.
            88 EXCELLENT value 19 THRU 20.
        
-       01 WS-NOTE-BRUT pic 99. 
        
        PROCEDURE DIVISION.
            Perform Assignment.
@@ -32,9 +31,8 @@
            PErform EndProgram.
        
        Assignment.
-           initialize WS-NOTE-BRUT
-           Move 12 to WS-NOTE-BRUT 
-           Move WS-NOTE-BRUT TO WS-NOTE
+           Display 'entrez la note : '
+           Accept WS-NOTE
            .
        
        Processing1.
@@ -53,12 +51,12 @@
                WHEN EXCELLENT
                DISPLAY 'excellent'
                WHEN OTHER
-                   CONTINUE
+               DISPLAY 'Problème note'
            END-EVALUATE
            .
            
        errors-management.
-           if WS-NOTE-BRUT IS NOT NUMERIC 
+           if WS-NOTE IS NOT NUMERIC 
                display 'erreur ----> note non numérique'
                STOP RUN
            end-if
@@ -67,4 +65,6 @@
        EndProgram.
            STOP RUN
            .
+
+
 
