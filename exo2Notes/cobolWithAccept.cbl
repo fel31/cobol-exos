@@ -3,7 +3,7 @@
       * Original author: Souad                               
       *
       * Maintenence Log                                              
-      * Date      Author        Maintenance Requirement               
+      * Date     Souad       Maintenance Requirement               
       * --------- ------------  --------------------------------------- 
       * 01/01/08 Souad  Created for COBOL class         
       *                                                               
